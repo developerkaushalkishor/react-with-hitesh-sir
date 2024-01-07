@@ -21,11 +21,12 @@ const reactElement = {
   },
   children: "click me to visit google",
 };
-
+const anotherUser = "my react user";
 const reactCustomElement = React.createElement(
   "a",
   { href: "https://google.com", target: "_blank" },
-  "click me to visit GOOGLE"
+  "click me to visit GOOGLE",
+  anotherUser
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(
